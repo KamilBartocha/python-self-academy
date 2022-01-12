@@ -1,4 +1,5 @@
 # A decorator is a function that takes a function object as an argument and returns a function as a value
+from functools import lru_cache, wraps
 def f1(func):
     """
     basic decorator example
@@ -51,3 +52,12 @@ def fib(n):
         return fib(n-1) + fib(n-2)
 
 print(fib(50))
+
+@lru_cache(maxsize=2)
+def fib_lru(n):
+    if n < 2:
+        return n
+    else:
+        return fib_lru(n-1) + fib_lru(n-2)
+
+print(fib_lru(50))
