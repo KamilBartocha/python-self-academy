@@ -1,5 +1,8 @@
 # A decorator is a function that takes a function object as an argument and returns a function as a value
 def f1(func):
+    """
+    basic decorator example
+    """
     def wrapper(*args, **kwargs):
         print("started")
         func(*args, **kwargs )
@@ -26,6 +29,9 @@ def g(x):
 print(g(3))
 
 def memorize(function):
+    """
+    make fib run more efficient - save solutions
+    """
     cache = {}
 
     def wrapper(*args):
