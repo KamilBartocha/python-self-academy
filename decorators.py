@@ -1,5 +1,5 @@
 # A decorator is a function that takes a function object as an argument and returns a function as a value
-from functools import lru_cache, wraps
+from functools import lru_cache
 def f1(func):
     """
     basic decorator example

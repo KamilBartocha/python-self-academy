@@ -85,3 +85,10 @@ while(n>0):
 print(rev_n)
 
 #23 todo
+
+x = 120093492
+y = str(x)
+print(y[::-1])
+
+x1 = ["doa","doac","dao"]
+print(sorted(x1))
