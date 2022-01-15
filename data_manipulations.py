@@ -91,4 +91,4 @@ y = str(x)
 print(y[::-1])
 
 x1 = ["doa","doac","dao"]
-print(sorted(x1))
+print("".join(x1))
