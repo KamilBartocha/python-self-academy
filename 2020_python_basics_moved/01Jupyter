@@ -1,0 +1,31 @@
+#print("hello jupyter")
+import pandas as pd
+df = pd.read_csv('vgsales.csv')
+df.shape
+df.describe()
+df.values
+
+
+#
+#
+#
+#
+#
+
+
+import pandas as pd
+from sklearn.tree import DecisionTreeClassifier
+games_data = pd.read_csv('vgsales.csv')
+games_data
+
+#spliting columns
+
+X = games_data.drop(columns=['Name','EU_Sales','Genre','Other_Sales','JP_Sales','Publisher','NA_Sales','Year','Rank'])
+y = games_data['Genre']
+X
+
+#decisiontree will not work couse of wrong data boi 
+
+model = DecisionTreeClassifier()
+model.fit(X, y)
+model.predict([ [] ])
