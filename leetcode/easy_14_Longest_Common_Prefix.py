@@ -4,18 +4,26 @@
 from ast import List
 
 class Solution:
-    def longestCommonPrefix(self, strs: List[str]) -> str:
+    def longestCommonPrefix(strs):
         prefix = strs[0]
-        def match_letters(word1, word2):
+        def find_prefix(word_1, word_2):
             match = ""
-            for i in range(min(len(word1), len(word2))):
-                if word1[i] != word2[i]:
-                    break
-            if i != 0:
-                match = word1[:i-1]
+            for i in range(min(len(word_1), len(word_2))):
+                # flower flow -> 0 1 2 3 
+                if word_1[i] == word_2[i]:
+                    match = match + str(word_1[i])
+                else: return match
             return match
+        
+        for idx in range(len(strs) - 1 ):
+            prefix = find_prefix(prefix, strs[idx + 1])
+        
+        return prefix    
 
-        for idx in range(len(strs) - 1):
-            prefix = match_letters(prefix, strs[idx + 1])
 
-        return prefix
+    strs = ["flower","flow","flight"]
+    strs2 = ["dog","racecar","car"]
+    strs3 = ["cir","car"]
+    longestCommonPrefix(strs)
+    longestCommonPrefix(strs2)
+    longestCommonPrefix(strs3)
