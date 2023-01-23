@@ -6,5 +6,6 @@
 - 2020_python_basics: python basics
 - 2020_spoj: spoj task solutions
 - 2021_numerical_analysis: numerical analysis projet, Hausholder interpolation
+- 2022_: Python interesting stuff
 - random_learning_stuff: Examples of use python-specyfic tools.
 - leetcode: leetcode.com problems solutions
