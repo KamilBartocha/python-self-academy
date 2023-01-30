@@ -12,13 +12,11 @@ language_select = driver.find_element(By.ID, "langSelect-EN")
 language_select.click()
 time.sleep(5)
 
-cookie_count = driver.find_element(By.ID, "cookies")
-
 # # productPrice1 -> productPrice0
-# # items = [driver.find_element(By.ID,
-#         # ("products" + str(i) for i in range(1, -1, -1)))]
+# items = driver.find_element(By.ID, ["products" + str(i) for i in range(1, -1, -1))]
 
 for i in range(5000):
+    cookie_count = driver.find_element(By.ID, "cookies")
     cookie = driver.find_element(By.ID, "bigCookie")
     actions = ActionChains(driver)
     actions.click(cookie)
