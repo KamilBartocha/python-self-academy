@@ -13,7 +13,8 @@ language_select.click()
 time.sleep(5)
 
 # # productPrice1 -> productPrice0
-# items = driver.find_element(By.ID, ["products" + str(i) for i in range(1, -1, -1))]
+# items = list(driver.find_element(By.ID, "productPrice0"))
+# items.append(driver.find_element(By.ID, "productPrice1"))
 
 for i in range(5000):
     cookie_count = driver.find_element(By.ID, "cookies")
