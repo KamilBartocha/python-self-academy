@@ -7,6 +7,7 @@
 - 2020_spoj: spoj task solutions
 - 2021_numerical_analysis: numerical analysis projet, Hausholder interpolation
 - 2022_: Python interesting stuff
+- 2023_: Python roadmap and some exercises
 - 2023_selenium: Some selenium implementation
 - random_learning_stuff: Examples of use python-specyfic tools.
 - leetcode: leetcode.com problems solutions
