@@ -1,0 +1,4 @@
+Yooooooooo
+This is some text
+Have a good one!
+Adding(append) line to file
