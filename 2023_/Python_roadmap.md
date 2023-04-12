@@ -26,6 +26,7 @@
 - 2.12 Environments
 - 2.13 Module Creation
 - 2.14 Async IO
+- 2.15 JSON
 
 ## 03 Advanced
 - 3.1 Decorators
