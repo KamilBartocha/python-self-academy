@@ -12,5 +12,5 @@ if __name__ == "__main__":
                     signs = signs[1:-1]
                 else: return False
             else: return True
-    
+
     print(isPalindrome(1000021))

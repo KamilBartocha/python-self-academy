@@ -20,7 +20,7 @@ def isValid(s):
         if i=='(' or i =='[' or i=='{':
             stack.append(i)
         # stack len >0 and its closing parantheses
-        elif(len(stack)):                
+        elif(len(stack)):
             el = stack.pop()
             if el=='(' and i !=')':
                 return False

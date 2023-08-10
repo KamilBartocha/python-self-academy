@@ -11,7 +11,7 @@ class Solution:
             for idx2 in range(idx1 + 1, len(nums)):
                 if(nums[idx1] + nums[idx2] == target):
                     return[idx1, idx2]
-    
+
     def twoSum(nums, target):
         """ better solution using dict """
         seen = dict()
