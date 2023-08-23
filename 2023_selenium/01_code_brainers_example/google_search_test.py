@@ -5,7 +5,7 @@ from time import sleep
 import re
 
 # GIVEN "test selenium" is typed into search on google.com
-# WHEN ENTER is presses (search request)
+# WHEN "ENTER" is presses (search request)
 # THEN Result stats are calculated and visible on screen
 
 driver = webdriver.Safari()
